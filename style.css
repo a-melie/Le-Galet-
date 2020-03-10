@@ -4,7 +4,25 @@ body{
 }
 
 /* HEADER */
+ nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+ }
+ 
+ .items{
+	display: flex;
+	height: 100px;
+	width: 1000px;
+	justify-content: space-around;
+	align-items: center;
+ }
 
+ .droite{
+	padding: 10px;
+	flex: 200px;
+	
+ }
 /* FOOTER */
 
 /* PRESENTATION */
