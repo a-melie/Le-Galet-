@@ -7,6 +7,18 @@ body{
 
 /* FOOTER */
 
+footer{
+	display:flex;
+	justify-content:space-around;
+	align-items: center;
+	background-color:rgb(175, 166, 166);
+	color:whitesmoke;
+}
+
+.links{
+	display:flex;
+	justify-content: space-around
+}
 
 .icone{
     font-size:100px;
@@ -17,11 +29,27 @@ body{
     color:blue;
 }
 .deliveroo{
-    
+	width: 155px;
+	height: auto;
 }
 
-@media screen and (max-width: 961px) {
-    
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+	footer{
+		display:flex;
+		flex-direction:column;
+
+	}
+
+}
+
+@media screen and (max-width:768px) {
+    footer{
+		display:flex;
+		flex-direction:column;
+	
+	}
 }
 
 /* PRESENTATION */
