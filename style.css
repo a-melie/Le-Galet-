@@ -7,25 +7,25 @@ body{
 }
 
 /* HEADER */
- nav{
+nav{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
- }
- 
- .items{
-	display: flex;
-	height: 100px;
-	width: 1000px;
-	justify-content: space-around;
-	align-items: center;
+}
+
+ .small-img{
+	 width: 100px;
+	 height: auto;
+	 margin-right: auto;
  }
 
- .droite{
-	padding: 10px;
-	flex: 200px;
-	
+ .logo{
+	margin-right: auto; 
  }
+ .item-menu{
+	 margin-right: 45px;
+ }
+ 
 /* FOOTER */
 
 .img-header{
