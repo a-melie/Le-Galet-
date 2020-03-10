@@ -7,6 +7,23 @@ body{
 
 /* FOOTER */
 
+
+.icone{
+    font-size:100px;
+    color:rgb(0, 110, 255);
+}
+.facebook{
+    font-size:100px;
+    color:blue;
+}
+.deliveroo{
+    
+}
+
+@media screen and (max-width: 961px) {
+    
+}
+
 /* PRESENTATION */
 
 h1{
