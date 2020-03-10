@@ -64,3 +64,109 @@ h1{
 	padding-top:150px;
 	color:whitesmoke;
 }
+/*BANNER*/
+
+/*MENU*/
+.banner-background{
+	height: 30vh;
+    background-attachment: fixed;
+    background-size: cover;
+    color: whitesmoke;
+    padding-top: 100px;
+    opacity: 0.7;
+}
+.banner-background-menu{
+	background-image: url(images/burgers.jpg); 
+}
+.card-menu-container{
+	display:flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+.margin-top{
+	margin-top:10px;
+}
+.container-menu{
+    display: flex;
+    flex-direction: column;
+	align-items: center;	
+}
+.card-title{
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px){
+	.banner-background-menu{
+		background-image: none;
+		background-color: green;
+		height: 5vh;
+		padding-top: 0;
+	}
+	.card-menu-container{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.card{
+		margin-top: 30px;
+	}
+}
+
+@media only screen (min-width: 768px) and (max-width: 992px){
+	.banner-background-menu{
+		background-image: none;
+		background-color: green;
+		height: 5vh;
+		padding-top: 5px;
+	}
+	.card-menu-container{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.card{
+		margin-top: 30px;
+	}
+}
+
+/*EVENEMENTS*/
+.banner-background-evenements{
+	background-image: url(images/bieres.jpg);
+}
+@media only screen and (max-width: 768px){
+	.banner-background-evenements{
+		background-image: none;
+		background-color: green;
+		height: 5vh;
+		padding-top: 0;
+	}
+}
+@media only screen (min-width: 768px) and (max-width: 992px){
+	.banner-background-evenements{
+		background-image: none;
+		background-color: green;
+		height: 5vh;
+		padding-top: 5px;
+	}
+}
+/*CONTACT*/
+.banner-background-contact{
+	background-image: url(images/tel.jpg);
+	background-position-y: 70%;
+}
+@media only screen and (max-width: 768px){
+	.banner-background-contact{
+		background-image: none;
+		background-color: green;
+		height: 5vh;
+		padding-top: 0;
+	}
+}
+@media only screen (min-width: 768px) and (max-width: 992px){
+	.banner-background-contact{
+		background-image: none;
+		background-color: green;
+		height: 5vh;
+		padding-top: 5px;
+	}
+}
+
+
