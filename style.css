@@ -8,13 +8,9 @@ body{
 li {
 	list-style: none;
 }
-
 a{
 	text-decoration: none;
 }
-
-/* HEADER */
-
 nav{
 	display: flex;
 	justify-content: flex-end;
@@ -62,6 +58,7 @@ h1{
 .img-header{
 	display: none;
 	width:100%;
+	margin-top: 100px;
 }
 @media only screen and (max-width: 768px){
 	h1{
@@ -128,10 +125,7 @@ h1{
 	.card-menu-container{
 		flex-direction: column;
 		flex-wrap: wrap;
-	}
-	.card{
-		margin-top: 30px;
-	}
+	}	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
