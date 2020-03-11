@@ -2,7 +2,6 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	margin:0;
-	padding:0;
 	width:100%;
 }
 /*NAVBAR*/
@@ -10,10 +9,21 @@ li {
 	list-style: none;
 }
 
+a{
+	text-decoration: none;
+}
+
+/* HEADER */
+
 nav{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: white;
 }
 
 .small-img{
@@ -28,6 +38,12 @@ nav{
 .item-menu{
 	 margin-right: 45px;
  }
+ .anchor{
+	 display: block;
+	 height: 100px;
+	 margin-top: -100px;
+	 visibility: hidden;
+ }
  
 
 /* HEADER */
@@ -41,6 +57,7 @@ h1{
 	background-attachment: fixed;
 	padding-top:150px;
 	color:whitesmoke;
+	margin-top: 100px;
 }
 .img-header{
 	display: none;
