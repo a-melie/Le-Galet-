@@ -197,6 +197,46 @@ h1{
 	background-image: url(images/tel.jpg);
 	background-position-y: 70%;
 }
+
+form {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 50px;
+}
+.contactus {
+	display: flex;
+    flex-direction: column;
+    width: 80%;
+	justify-content: center;
+	
+	align-items: center;
+}
+
+.select{
+	width:60%;
+
+}
+.contact {
+	display: flex;
+	width: 60%;
+}
+.message{
+	width: 60%;
+	height: 100px;
+}
+
+.margintopform {
+	margin-bottom: 15px;
+}
+.button{
+	background-color: #8cba03;
+	padding:10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: whitesmoke
+}
+
 @media only screen and (max-width: 768px){
 	.banner-background-contact{
 		background-image: none;
@@ -221,6 +261,9 @@ footer{
 	align-items: center;
 	background-color:rgb(175, 166, 166);
 	color:whitesmoke;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 .heures{
 	margin-top:20px;
@@ -241,8 +284,12 @@ footer{
 .deliveroo{
 	width: 155px;
 	height: auto;
+	border-radius: 10px;
 }
 
+iframe {
+	border-radius: 10px;
+}
 @media screen and (min-width: 768px) and (max-width: 992px) {
 	footer{
 		display:flex;
