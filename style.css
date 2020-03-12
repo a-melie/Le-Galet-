@@ -4,12 +4,14 @@ body{
 	margin:0;
 	width:100%;
 }
+
 /*NAVBAR*/
 li {
 	list-style: none;
 }
 a{
 	text-decoration: none;
+	color:black;
 }
 nav{
 	display: flex;
@@ -33,6 +35,16 @@ nav{
  }
 .item-menu{
 	 margin-right: 45px;
+	 text-decoration: none;
+	 color:black;
+ }
+ .item-menu:hover{
+	border: 2px solid whitesmoke;
+	background-color: #8cba03;
+	padding:15px;
+	border-radius: 10px;
+	border: 2px solid whitesmoke;
+	color:whitesmoke;
  }
  .anchor{
 	 display: block;
@@ -40,29 +52,60 @@ nav{
 	 margin-top: -100px;
 	 visibility: hidden;
  }
+ .burger, .burger-title, .burger2{
+	 display: none;
+ }
+ .open-burger {
+	margin-top:100px;
+	display:flex;
+	float:right;
+	transition: .6s;
+}
+.padding-nav{
+	padding: 10px 10px 10px 10px;
+}
+.burger-icon{
+	font-size:2em;
+	padding-right:20Px;
+	color:#8cba03;
+}
+ 
  @media only screen and (max-width: 768px){
 	 .menu-hidden{
 		 display: none;
 	 }
+	 .burger-title{
+		 display: flex;
+		 margin-right: 40px;
+	 }
+	 .burger{
+		 display:flex;
+		 margin-right: 30px;
+	 }	 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
 	.menu-hidden{
 		display: none;}
+	.burger{
+		 display:flex;
+		 margin-right: 30px;
+	 }
+	.burger-title{
+		 display: flex;
+		 margin-right: 200px;
+	 }	
 }
 
- 
-
 /* HEADER */
-
 h1{
 	font-weight: bold;
 	width:100%;
     height: 60vh;
-    background-image: url(images/c22.jpg);
+	background-image: url(images/c22.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	padding-top:150px;
+	padding-top:80px;
 	color:whitesmoke;
 	margin-top: 100px;
 }
@@ -77,18 +120,19 @@ h1{
 	}
 	.img-header{
 		display: block;
+		opacity: 0.9;
 	}
 	.p-header{
 		display:none;
 	}
 }
-
 @media only screen and (min-width: 768px) and (max-width: 992px){
 	h1{
 		display:none;
 	}
 	.img-header{
 		display: block;
+		opacity: 0.9;
 	}
 	.p-header{
 		display:block;
@@ -96,7 +140,6 @@ h1{
 }
 
 /*BANNER*/
-
 .banner-background{
 	height: 30vh;
     background-attachment: fixed;
@@ -109,23 +152,33 @@ h1{
 .banner-background-menu{
 	background-image: url(images/burgers.jpg); 
 }
-.card-menu-container{
-	display:flex;
-	justify-content: flex-end;
-	flex-wrap: wrap;
+.AB{
+	display: flex;
+	justify-content: space-between;
 }
-.margin-top{
-	margin-top:10px;
+.B{
+	margin-left:30px;
 }
-.container-menu{
-    display: flex;
-    flex-direction: column;
-	align-items: center;	
+.ABC{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.C{
+	padding-left: 0;
+	
+}
+.D{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.EF{
+	display:none;
 }
 .card-title{
 	text-decoration: underline;
 }
-
 @media only screen and (max-width: 768px){
 	.banner-background-menu{
 		background-image: none;
@@ -133,10 +186,10 @@ h1{
 		height: 5vh;
 		padding-top: 0;
 	}
-	.card-menu-container{
+	.container-menu, .AB, .ABC{
 		flex-direction: column;
 		flex-wrap: wrap;
-	}	
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -146,13 +199,19 @@ h1{
 		height: 5vh;
 		padding-top: 5px;
 	}
-	.card-menu-container{
-		flex-direction: column;
-		flex-wrap: wrap;
+	.AB{
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
 	}
-	.card{
-		margin-top: 30px;
+	.EF{
+		display:flex;
+		justify-content: space-around;
+		margin-top: 
 	}
+	.C, .D{
+		display: none;
+	}	
 }
 
 /*EVENEMENTS*/
@@ -175,6 +234,10 @@ h1{
 		padding-top: 5px;
 	}
 }
+.carousel{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 .carousel-items {
     display: flex;
     overflow-x: scroll;
@@ -189,36 +252,44 @@ h1{
 	margin-left: 1rem;
 	scroll-snap-align: start;
 }
-
 ::-webkit-scrollbar-track {
     background-color: #F5F5F5;
 }
-
 ::-webkit-scrollbar {
     height: 6px;
     background-color: #F5F5F5;
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: #3d4852;
     border-radius: 3px;
 }
+.carousel-img, .card {
+	width:32vw;
+}
 
-.carousel-img {
-	width: 530px;
-	height: 320px;
+@media only screen and (max-width: 768px){
+    .card, .carousel-img{
+		width:93vw;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+     .card, .carousel-img{
+        width:97vw;
+    }
 }
 /*CONTACT*/
 .banner-background-contact{
 	background-image: url(images/tel.jpg);
 	background-position-y: 70%;
 }
-
 form {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	margin-top: 50px;
+}
+input, select{
+	height: 1.5rem;
 }
 .contactus {
 	display: flex;
@@ -228,10 +299,8 @@ form {
 	
 	align-items: center;
 }
-
 .select{
 	width:60%;
-
 }
 .contact {
 	display: flex;
@@ -241,18 +310,23 @@ form {
 	width: 60%;
 	height: 100px;
 }
-
+.form-border{
+	border: 1px grey solid;
+	border-radius: 5px;
+	background-color: whitesmoke;
+}
 .margintopform {
 	margin-bottom: 15px;
+	font-size: 1rem;
 }
 .button{
 	background-color: #8cba03;
 	padding:10px;
+	border: 3px whitesmoke solid;
 	border-radius: 10px;
 	font-weight: bold;
 	color: whitesmoke
 }
-
 @media only screen and (max-width: 768px){
 	.banner-background-contact{
 		background-image: none;
@@ -284,10 +358,10 @@ footer{
 .heures{
 	margin-top:20px;
 }
-
 .links{
 	display:flex;
-	justify-content: space-around
+	justify-content: space-around;
+	align-items: center;
 }
 .icone{
     font-size:100px;
@@ -298,11 +372,10 @@ footer{
     color:blue;
 }
 .deliveroo{
-	width: 155px;
+	width: 90px;
 	height: auto;
 	border-radius: 10px;
 }
-
 iframe {
 	border-radius: 10px;
 }
@@ -312,23 +385,20 @@ iframe {
 		flex-direction:column;
 	}
 }
-
 @media screen and (max-width:768px) {
     footer{
 		display:flex;
 		flex-direction:column;	
 	}
-
 	.footer-right{
 		overflow:hidden;
 		position:relative;
-		height:100%;
 	}
-
+	
 	.footer-right iframe {
 		left:0;
 		top:0;
-		height:100%;
+		width: 90%;
 	}
 }
 
