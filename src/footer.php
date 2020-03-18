@@ -12,7 +12,7 @@
             <a href="https://twitter.com/login?lang=fr" target="blank"> <i class="fab fa-twitter-square icone"></i></a>
             <a href="https://fr-fr.facebook.com/" target="blank"> <i class="fab fa-facebook facebook"></i></a>
             <a href="https://deliveroo.fr/fr/" target="blank" Pour vous faire livrer nos délicieux repas !class="ccl-1b0ffd1d711941bf ccl-c3b2310063912620 Deliveroo" href="/fr/">
-                <img class="deliveroo" src="images/deliveroo.jpeg" alt="Deliveroo"></a>
+                <img class="deliveroo" src="../images/deliveroo.jpeg" alt="Deliveroo"></a>
         </div>
     </div>
     <div class="footer-right">

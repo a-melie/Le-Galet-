@@ -243,8 +243,23 @@ h1{
     overflow-x: scroll;
 	padding: 1rem 0;
 	scroll-snap-type: x mandatory;
-	
 }
+.card{
+	height:75vh;
+}
+.card-content >p{
+	height: 80px;
+	overflow: auto;
+}
+/**.card-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-around;
+	align-items: center ;
+}*/
+
+
 .carousel-item {
     flex-grow: 1;
     flex-shrink: 0;
