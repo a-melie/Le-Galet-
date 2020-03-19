@@ -23,8 +23,7 @@
     <section>
         <h2 class="banner-background banner-background-evenements">EVENEMENT</h2>
         <section class="carousel">
-            <?php
-            require_once('src/carousel.php');?>
+            <?php require_once('src/carousel.php');?>
             <ul class="carousel-items">
                 <?php
                     foreach ($events as $eventData) {

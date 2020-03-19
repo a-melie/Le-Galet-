@@ -1,12 +1,12 @@
 <div class="container-menu">
     <div class="firstLigneMenu">
             <?php require_once ('menutableau.php');?>
-            <?php foreach($menuContents as $menuContent => $names):?>
+            <?php foreach($menuContents as $menuContent => $foods):?>
                 <div class="menu-test">
                     <h3 class="card-title"><?= $menuContent ?></h3>
                     <ul>
-                        <?php foreach($names as $name): ?>
-                            <li class="card-menu"><?=$name?></li>
+                        <?php foreach($foods as $food): ?>
+                            <li class="card-menu"><?=$food?></li>
                         <?php endforeach;?>
                     </ul>
                 </div>
