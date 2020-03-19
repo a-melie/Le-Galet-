@@ -109,6 +109,7 @@ h1{
 	color:whitesmoke;
 	margin-top: 100px;
 }
+
 .img-header{
 	display: none;
 	width:100%;
@@ -152,32 +153,25 @@ h1{
 .banner-background-menu{
 	background-image: url(images/burgers.jpg); 
 }
-.AB{
+
+.firstLigneMenu{
 	display: flex;
-	justify-content: space-between;
-}
-.B{
-	margin-left:30px;
-}
-.ABC{
-	display: flex;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	margin-top: 50px;
 }
-.C{
-	padding-left: 0;
-	
+.card-menu{
+	padding:8px 0 8px 0;
 }
-.D{
+.secondLigneMenu{
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
-}
-.EF{
-	display:none;
+	margin-top: 20px;
 }
 .card-title{
-	text-decoration: underline;
+	padding-bottom: 10px;
+	border-bottom: 1px #3d4852 solid;
 }
 @media only screen and (max-width: 768px){
 	.banner-background-menu{
@@ -185,10 +179,6 @@ h1{
 		background-color:#8cba03;
 		height: 5vh;
 		padding-top: 0;
-	}
-	.container-menu, .AB, .ABC{
-		flex-direction: column;
-		flex-wrap: wrap;
 	}
 }
 
@@ -199,19 +189,6 @@ h1{
 		height: 5vh;
 		padding-top: 5px;
 	}
-	.AB{
-		width: 100%;
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	.EF{
-		display:flex;
-		justify-content: space-around;
-		margin-top: 
-	}
-	.C, .D{
-		display: none;
-	}	
 }
 
 /*EVENEMENTS*/
@@ -251,14 +228,6 @@ h1{
 	height: 80px;
 	overflow: auto;
 }
-/**.card-content{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-content: space-around;
-	align-items: center ;
-}*/
-
 
 .carousel-item {
     flex-grow: 1;
