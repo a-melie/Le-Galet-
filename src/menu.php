@@ -6,7 +6,7 @@
                     <h3 class="card-title"><?= $menuContent ?></h3>
                     <ul>
                         <?php foreach($foods as $food): ?>
-                            <li class="card-menu"><?=$food?></li>
+                            <li class="card-menu"><?= $food ?></li>
                         <?php endforeach;?>
                     </ul>
                 </div>
