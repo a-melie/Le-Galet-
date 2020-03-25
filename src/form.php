@@ -1,7 +1,10 @@
 <?php
 $successMessage = '';
 $user =[];
-
+function cleanInput (string $data):string
+{
+    return htmlentities(ucfirst(trim($data)));
+}
 
 if ($_SERVER["REQUEST_METHOD"]=== 'POST') {
     $errors = [];
@@ -35,8 +38,9 @@ if ($_SERVER["REQUEST_METHOD"]=== 'POST') {
     }else{
         $user['message'] = $_POST['message'];
     }
+
     if(count($errors)===0){
-        $successMessage = 'Merci ' . $user['firstname'] . ' ' . $user ['name'] . ' pour votre message.' . '<br>' . 'Nous vous contacterons à l\'adresse ' . $user['email'] . ' ou au '. $user['phone'] . ' dans les plus brefs délais.';
+        $successMessage = 'Merci ' . cleanInput($user['firstname']) . ' ' . cleanInput($user ['name']) . ' pour votre message.' . '<br>' . 'Nous vous contacterons à l\'adresse ' . htmlentities($user['email']) . ' ou au '. $user['phone'] . ' dans les plus brefs délais.';
     }
 }
 
