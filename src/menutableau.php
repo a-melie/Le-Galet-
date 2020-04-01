@@ -1,38 +1,38 @@
 <?php
 $menuContents =[
-    'Apéritifs-Entrées' => [
-        'Planche de jambons ibériques  8€',
-        'Guacamole et tortillas chips  8€',
-        'Oignons rings  8€',
-        'Rolls végétariens  8€',
-        'Tartare de légumes provençaux  8€',
-        'Tartare de poissons du jour  8€',
+    'Apéritifs-Entrées - 7€' => [
+        'Planche de jambons ibériques',
+        'Guacamole et tortillas chips',
+        'Oignons rings',
+        'Rolls végétariens',
+        'Tartare de légumes provençaux',
+        'Tartare de poissons du jour',
     ],
-    'Plats' =>[
-        'Cheeseburger et ses frites maison  15€',
-        'Burger Bacon et ses frites maison  15€',
-        'Burger végétarien et ses frites maison  15€',
-        'Poisson du jour, accompagnement  15€',
-        'Viande du jour, accompagnement  15€',
-        'Fusilli aux tomates et citrons confits  15€',
+    'Plats - 13€' =>[
+        'Cheeseburger et ses frites maison',
+        'Burger Bacon et ses frites maison',
+        'Burger végétarien et ses frites maison',
+        'Poisson du jour, accompagnement',
+        'Viande du jour, accompagnement',
+        'Fusilli aux tomates et citrons confits',
     ],
-    'Desserts' => [
-        'Assortiment de fromages  7€',
-        'Trio de crèmes brûlées  7€',
-        'Tartelette aux fruits de saison  7€',
-        'Dessert du jour  7€',
-        'Glaces/sorbets au choix  7€',
-        'Café/Thé gourmand  7€',
+    'Desserts - 7€' => [
+        'Assortiment de fromages',
+        'Trio de crèmes brûlées',
+        'Tartelette aux fruits de saison',
+        'Dessert du jour',
+        'Glaces/sorbets au choix',
+        'Café/Thé gourmand',
     ],
 ];
 
 $menuDrinks =[
-    'Boissons' =>[
-        'Soda 33cl  3€',
-        'Jus de fruits  3€',
-        'Smoothies  3€',
-        'Bière locale  5€',
-        'Vin au verre  5€',
-        'Digestifs  6€',
+    'Boissons - 4€' =>[
+        'Soda 33cl',
+        'Jus de fruits',
+        'Smoothies',
+        'Bière locale',
+        'Vin au verre',
+        'Digestifs',
     ],
 ];

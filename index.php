@@ -21,18 +21,18 @@
     </section>
     <span class="anchor" id="evenements"></span>
     <section>
-        <h2 class="banner-background banner-background-evenements">EVENEMENT</h2>
+    <h2 class="banner-background banner-background-evenements">EVENEMENT</h2>
         <section class="carousel">
             <?php require_once('src/carousel.php');?>
             <ul class="carousel-items">
                 <?php
                     foreach ($events as $eventData) {
                         echo '<li class="carousel-item">';
-                            echo '<div class="card">';
-                            echo '<h2 class="card-title">' . $eventData['title'] . '</h2>';
-                                echo '<img src="images/' . $eventData['image'] . '" class="carousel-img" alt="' . $eventData['alt'] . '"/>';
-                                echo '<div class="card-content"> <p>' . $eventData['description'] . '</p><br>';
-                                echo '<a href="#" class="button">En savoir plus</a>';
+                        echo '<div class="card">';
+                        echo '<h2 class="card-title">' . $eventData['title'] . '</h2>';
+                        echo '<img src="images/' . $eventData['image'] . '" class="carousel-img" alt="' . $eventData['alt'] . '"/>';
+                        echo '<div class="card-content"> <p>' . $eventData['description'] . '</p><br>';
+                        echo '<a href="#" class="button">En savoir plus</a>';
                         echo '</div>';
                         echo '</li>';
                     };
