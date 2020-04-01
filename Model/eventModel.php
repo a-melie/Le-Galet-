@@ -54,3 +54,7 @@ function deleteEvent(int $id): void
     $statement->bindValue(':id',$id, PDO::PARAM_INT);
     $statement->execute();
 }
+function cleanInput($input):string
+{
+    return htmlentities(trim($input));
+}

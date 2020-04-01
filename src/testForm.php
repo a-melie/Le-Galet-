@@ -1,10 +1,7 @@
 <?php
 $successMessage = '';
 $user =[];
-function cleanInput (string $data):string
-{
-    return htmlentities(ucfirst(trim($data)));
-}
+require_once 'Model/eventModel.php';
 
 if ($_SERVER["REQUEST_METHOD"]=== 'POST') {
     $errors = [];
