@@ -221,9 +221,6 @@ h1{
 	padding: 1rem 0;
 	scroll-snap-type: x mandatory;
 }
-.card{
-	height:75vh;
-}
 .card-content >p{
 	height: 80px;
 	overflow: auto;

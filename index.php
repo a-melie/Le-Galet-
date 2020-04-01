@@ -20,23 +20,27 @@
         <?php require_once('src/menu.php') ?>
     </section>
     <span class="anchor" id="evenements"></span>
+    <?php require_once 'connec.php';
+     require_once 'Model/eventModel.php';
+     $events = getAllEvents();
+    ?>
     <section>
-    <h2 class="banner-background banner-background-evenements">EVENEMENT</h2>
+    <h2 class="banner-background banner-background-evenements"><a href="edit.php">EVENEMENT</a></h2>
+        <?= isset($_GET['success'])? $_GET['success']:''?>
         <section class="carousel">
-            <?php require_once('src/carousel.php');?>
             <ul class="carousel-items">
-                <?php
-                    foreach ($events as $eventData) {
-                        echo '<li class="carousel-item">';
-                        echo '<div class="card">';
-                        echo '<h2 class="card-title">' . $eventData['title'] . '</h2>';
-                        echo '<img src="images/' . $eventData['image'] . '" class="carousel-img" alt="' . $eventData['alt'] . '"/>';
-                        echo '<div class="card-content"> <p>' . $eventData['description'] . '</p><br>';
-                        echo '<a href="#" class="button">En savoir plus</a>';
-                        echo '</div>';
-                        echo '</li>';
-                    };
-                ?>
+                <?php foreach ($events as $eventData): ?>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title"><a href="edit.php?id=<?=$eventData['id']?>"><?= $eventData['title'] . ' '  . $eventData['event_date']?></a></h2>
+                            <img src="images/<?= $eventData['image'] ?>" class="carousel-img" alt="<?= $eventData['alt'] ?>"/>
+                            <div class="card-content">
+                                <p><?= $eventData['description'] ?></p><br>
+                                <a href="#" class="button">En savoir plus</a>
+                            </div>
+                        </div>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </section>
     </section>
