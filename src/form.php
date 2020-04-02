@@ -2,7 +2,7 @@
 $successMessage = '';
 $user =[];
 $errors=[];
-require_once("testform.php");
+require_once("Controller/testForm.php");
 if ($_POST && count($errors) === 0){
      echo $successMessage;
 }

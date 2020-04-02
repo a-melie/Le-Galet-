@@ -2,6 +2,7 @@
 require_once '../connec.php';
 require_once '../Model/eventModel.php';
 
+
 if (isset($_POST['update'])) {
     $title = cleanInput($_POST['title']);
     $event_date = cleanInput($_POST['event_date']);
@@ -27,3 +28,5 @@ if (isset($_POST['delete'])){
         header('Location: ../index.php?success=Evènement Supprimé');
     }
 }
+
+
