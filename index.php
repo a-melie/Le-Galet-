@@ -22,6 +22,7 @@
     <span class="anchor" id="evenements"></span>
     <?php require_once 'connec.php';
      require_once 'Model/eventModel.php';
+     require_once 'Model/drinkModel.php';
      $events = getAllEvents();
     ?>
     <section>
