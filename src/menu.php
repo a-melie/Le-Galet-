@@ -2,7 +2,6 @@
      require_once 'Model/eventModel.php';
      require_once 'Model/drinkModel.php';
      $drinks= getAllDrinks();
-
      ?>
 <div class="container-menu">
     <div class="firstLigneMenu">
