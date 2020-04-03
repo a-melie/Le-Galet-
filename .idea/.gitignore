@@ -1,5 +1,5 @@
 # Default ignored files
 /workspace.xml
-/connec.php
+../connec.php
 # Datasource local storage ignored files
 /dataSources.local.xml
