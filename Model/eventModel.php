@@ -58,3 +58,4 @@ function cleanInput($input):string
 {
     return htmlentities(trim($input));
 }
+
